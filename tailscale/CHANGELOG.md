@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.102.2.0
+
+- Tailscale package updated to version `1.102.2`
+
+
 ## 1.102.1.0
 
 - Tailscale package updated to version `1.102.1`
