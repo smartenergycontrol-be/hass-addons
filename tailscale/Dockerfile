@@ -10,8 +10,8 @@ RUN apt update &&\
     apt install -y wget iptables iproute2 procps iputils-ping &&\
     rm -rf /var/lib/apt/lists/*
 
-RUN update-alternatives --set iptables /usr/sbin/iptables-legacy
-RUN update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+RUN update-alternatives --set iptables /usr/sbin/iptables-nft
+RUN update-alternatives --set ip6tables /usr/sbin/ip6tables-nft
 
 COPY install.sh /
 RUN chmod a+x /install.sh
