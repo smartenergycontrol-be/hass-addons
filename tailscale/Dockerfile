@@ -1,5 +1,5 @@
 ARG BUILD_ARCH
-FROM homeassistant/${BUILD_ARCH}-base-debian:latest
+FROM homeassistant/${BUILD_ARCH}-base-debian:bookworm
 
 ARG BUILD_ARCH
 ARG TAILSCALE_VERSION="1.102.3"
